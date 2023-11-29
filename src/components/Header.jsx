@@ -16,7 +16,7 @@ const Header = () => {
           </span>
         </Link>
         <ul>
-          <li><Link to="/"><FaSignOutAlt className="icon_home" /></Link></li>
+          <li><Link to="/"><FaHome className="icon_home" /></Link></li>
           <li>
             <span>LE RESEAU ET SES BIBLIOTHEQUES</span>
             <FaChevronDown />
@@ -71,11 +71,16 @@ const Header = () => {
           <div className="left">
             <select name="champ1" id="champ1">
               <option value="1">Tous Les Documents</option>
-              <option value="2">opt 2</option>
+              <option value="2">Livres</option>
+              <option value="3">Revues et journaux</option>
+              <option value="4">CD et Vinyles</option>
+              <option value="5">DVD</option>
             </select>
             <select name="champ2" id="champ2">
               <option value="1">Dans Toutes Les Bibliothèques</option>
-              <option value="2">opt 2</option>
+              <option value="2">Bibloiotheque de Bertoua</option>
+              <option value="2">Bibloiotheque du centre d'excellence</option>
+              <option value="2">Bibloiotheque de la WCL</option>
             </select>
             <input type="text" />
             <span className="ok">OK</span>

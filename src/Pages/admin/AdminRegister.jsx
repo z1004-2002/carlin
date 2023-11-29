@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import liv1 from "../assets/logo.png"
-import "../assets/style/login.css"
+import liv1 from "../../assets/logo.png"
+import "../../assets/style/login.css"
 
-export default function Login() {
+export default function AdminRegister() {
     return (
         <div className="flex login">
             <div className="w-[50%] h-[100vh] md:hidden flex justify-center items-center p-6">
@@ -35,17 +35,10 @@ export default function Login() {
                         ></input>
                     </form>
                 </div>
+                <button className="login_button w-[200px] py-1 mt-4 rounded-sm text-white font-bold text-lg shadow-lg">
+                    Enregistrer
+                </button>
 
-                <Link to="/dashboard">
-                    <button className="login_button w-[200px] py-1 mt-4 rounded-sm text-white font-bold text-lg shadow-lg">
-                        Utilisateur
-                    </button>
-                </Link>
-                <Link to="/admin/dashboard">
-                    <button className="login_button w-[200px] py-1 mt-4 rounded-sm text-white font-bold text-lg shadow-lg">
-                        Admin
-                    </button>
-                </Link>
             </div>
         </div>
     );
