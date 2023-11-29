@@ -1,0 +1,176 @@
+.header {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.header .contenu {
+    display: flex;
+    flex-direction: row;
+    height: 130px;
+    width: 100%;
+    position: relative;
+    padding: 30px 30px 0 30px;
+}
+
+.header .contenu a .logo img {
+    width: 150px;
+}
+
+.header .contenu ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header ul li span {
+    cursor: pointer;
+}
+
+.header .contenu ul li {
+    font-size: small;
+    list-style: none;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header .contenu ul li .icon_home {
+    font-size: medium;
+}
+
+.header .circle {
+    position: absolute;
+    height: 1500px;
+    width: 1500px;
+    border-radius: 50%;
+    background: rgb(88, 77, 63);
+    right: -650px;
+    top: -1440px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+}
+
+.header .circle ul {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    position: relative;
+    left: -50px;
+}
+
+.header .circle ul li:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header .circle ul li {
+    padding: 0 30px;
+}
+
+.header .ban {
+    width: 100%;
+    position: absolute;
+    height: 100px;
+    background: url("../ban2.png");
+    background-size: 100% 100%;
+}
+
+.header .contenu2 {
+    background: transparent;
+    width: 100%;
+    position: relative;
+    padding: 0 30px 20px 30px;
+}
+
+.header .contenu2 .line1 {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    background: transparent;
+}
+
+.header .contenu2 .line1 ul {
+    display: flex;
+    flex-direction: row;
+    font-size: small;
+    background: transparent;
+}
+
+.header .contenu2 .line1 ul li:nth-child(3) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.header .contenu2 .line1 ul li {
+    padding: 0 5px;
+    background: transparent;
+}
+
+.header .contenu2 .line1 {
+    display: flex;
+    align-items: end;
+    color: red;
+    background: transparent;
+}
+
+.header .contenu2 .line2 {
+    font-size: 17px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    background: transparent;
+    color: white;
+}
+
+.header .contenu2 .line3 {
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+}
+
+.header .contenu2 .line3 select {
+    background: rgb(255, 255, 255);
+    margin-left: 5px;
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.header .contenu2 .line3 input {
+    background: rgb(255, 255, 255);
+    margin-left: 5px;
+    width: 350px;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+.header .contenu2 .line3 .right span{
+    background: rgb(88, 77, 63);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.header .contenu2 .line3 .ok {
+    background: rgb(88, 77, 63);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.abel{
+    padding-left: 272px;
+}
+.abel .contenu2 .line2 .title{
+    font-size: 20px;
+}
+.abel .logo img{
+    width: 100px;
+}

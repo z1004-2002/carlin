@@ -1,0 +1,83 @@
+.faq .link {
+    padding-left: 35px;
+    width: 100%;
+}
+
+.faq{
+    background: #ffffff;
+    width: 100%;
+}
+
+.faq .link ul {
+    display: flex;
+    align-items: center;
+}
+
+.faq .link ul li {
+    padding-right: 5px;
+    color: rgb(88, 77, 63);
+}
+
+.faq .link ul li:nth-child(2),
+.faq .link ul li:nth-child(3) {
+    font-size: 14px;
+}
+.faq .contenus{
+    width: 100%;
+    padding: 10px 100px;
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+}
+.faq .contenus .left{
+    width: 100%;
+    padding: 10px 30px;
+}
+.faq .contenus .title{
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.faq .contenus .rigth{
+    width: 100%;
+    padding: 10px 30px;
+}
+
+input[type=radio] {
+    display: none
+}
+
+.cadre {
+    width: 100%;
+}
+
+.accordeon {    
+    display: grid;
+    transition: grid-template-rows .4s ease-in-out;
+    grid-template-rows: 1fr 0;
+    overflow: hidden;
+}
+.accordeon p{
+    padding: 10px;
+}
+
+.cadre .cadre-accordeon{
+    margin-bottom: 10px;
+}
+.cadre-accordeon label {
+    cursor: pointer;
+    display: flex;
+    background-color: #ebebeb;
+    border: 1px solid gray;
+    padding: 20px ;
+    color: black;
+    padding: .5rem
+}
+
+.cadre-ex input:checked~.accordeon label,
+.cadre-ex label:hover {
+    filter: saturate(220%)
+}
+
+.cadre-accordeon input:checked~.accordeon {
+    grid-template-rows: 1fr 15rem;
+}

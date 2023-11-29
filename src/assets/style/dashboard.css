@@ -1,0 +1,27 @@
+.side{
+    background: rgb(88, 77, 63);
+}
+.admindashboard .cont{
+    flex-direction: column;
+}
+.admindashboard .cont .conten{
+    padding: 30px 20px 10px 300px;
+}
+.admindashboard .cont .conten .livres{
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+.admindashboard .cont .conten .livres{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.admindashboard .cont .conten .livres .item{
+    width: 23%;
+    padding: 10px 10px;
+}
+.admindashboard .cont .conten .livres .item img{
+    width: 90%;
+}
