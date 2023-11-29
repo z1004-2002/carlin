@@ -82,7 +82,7 @@ const Header = () => {
               <option value="2">Bibloiotheque du centre d'excellence</option>
               <option value="2">Bibloiotheque de la WCL</option>
             </select>
-            <input type="text" />
+            <input type="text" placeholder="Auteur, Titre, Edition..." />
             <span className="ok">OK</span>
           </div>
           <div className="right">
