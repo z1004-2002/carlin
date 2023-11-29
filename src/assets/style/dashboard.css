@@ -1,27 +1,53 @@
-.side{
+.side {
     background: rgb(88, 77, 63);
 }
-.admindashboard .cont{
+
+.admindashboard .cont {
     flex-direction: column;
 }
-.admindashboard .cont .conten{
+
+.admindashboard .cont .conten {
     padding: 30px 20px 10px 300px;
 }
-.admindashboard .cont .conten .livres{
+
+.admindashboard .cont .conten .livres {
     display: flex;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
 
 }
-.admindashboard .cont .conten .livres{
+
+.admindashboard .cont .conten .livres {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
-.admindashboard .cont .conten .livres .item{
-    width: 23%;
+
+.item {
+    width: 100%;
     padding: 10px 10px;
+    display: grid;
+    grid-template-columns: 0.4fr 1.6fr;
+    border-bottom: 1px solid silver;
+    box-shadow: 0 0px 2px silver;
 }
-.admindashboard .cont .conten .livres .item img{
-    width: 90%;
+
+.item img {
+    width: 100%;
+}
+.item .texte{
+    padding-left: 10px;
+}
+.item .texte .title{
+    font-size: 19px;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+.item .texte .info{
+    font-weight: 400;
+    font-size: 15px;
+}
+.item .texte .info span{
+    font-weight: 400;
+    font-size: 15px;
 }

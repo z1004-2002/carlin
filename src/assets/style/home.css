@@ -39,6 +39,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+.home section .body .slider .content_slide .item p{
+    font-weight: 600;
 }
 .home section .body .slider .content_slide .item img{
     width: 80%;
