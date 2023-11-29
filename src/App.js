@@ -7,6 +7,7 @@ import Accueil from "./Pages/Accueil";
 import FAQ from "./Pages/FAQ";
 import Login from "./Pages/Login";
 import AdminDashboad from "./Pages/admin/AdminDashboad";
+import Livre from "./Pages/admin/Livre";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -36,6 +37,7 @@ const App = () => {
         <Route path="/home/faq" element={<FAQ/>}></Route>
       
         <Route path="/dashboard" element={<AdminDashboad/>}></Route>
+        <Route path="/home/livre/:id" element={<Livre/>}></Route>
       </Routes>
     </div>
   );

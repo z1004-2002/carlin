@@ -21,33 +21,3 @@
     justify-content: center;
     flex-wrap: wrap;
 }
-
-.item {
-    width: 100%;
-    padding: 10px 10px;
-    display: grid;
-    grid-template-columns: 0.4fr 1.6fr;
-    border-bottom: 1px solid silver;
-    box-shadow: 0 0px 2px silver;
-}
-
-.item img {
-    width: 100%;
-}
-.item .texte{
-    padding-left: 10px;
-}
-.item .texte .title{
-    font-size: 19px;
-    font-weight: 600;
-    padding-left: 10px;
-    padding-bottom: 20px;
-}
-.item .texte .info{
-    font-weight: 400;
-    font-size: 15px;
-}
-.item .texte .info span{
-    font-weight: 600;
-    font-size: 16px;
-}

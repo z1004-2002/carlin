@@ -5,10 +5,12 @@ import SideBar from "../../components/admin/SideBar";
 import "./../../assets/style/dashboard.css"
 import liv1 from "../../assets/liv1.jpg"
 import liv2 from "../../assets/liv2.jpg"
+import { Link } from "react-router-dom";
+import Book from "../../components/Book";
 
 const livres = [liv1, liv2]
 
-export default function AdminDashboad() {
+export default function Livre() {
     const [dimension, setDimension] = useState();
     const [toggleVal, setToggleVal] = useState(true);
     const [data, setData] = useState([
@@ -42,6 +44,19 @@ export default function AdminDashboad() {
 
 
     useEffect(() => {
+        var requestOptions = {
+            method: 'GET',
+            redirect: 'follow'
+        };
+
+        fetch("https://pmbservice.onrender.com/books/", requestOptions)
+            .then(response => response.text())
+            .then(result => {
+                setData(JSON.parse(result))
+            })
+            .catch(error => console.log('error', error));
+
+
         setDimension(window.innerWidth);
     }, [data]);
 
@@ -51,26 +66,7 @@ export default function AdminDashboad() {
                 <DashHeader />
                 <div className="conten">
                     <div className="livres">
-                        {data.map((livre) => <div className="item">
-                            <img src={liv2} alt="" />
-                            <div className="texte">
-                                <div className="title">{livre.tit1}</div>
-                                <div className="info">
-                                    <p>
-                                        Auteur : <span>{ }</span>
-                                    </p>
-                                    <p>
-                                        Année : <span>{livre.year}</span>
-                                    </p>
-                                    <p>
-                                        Nombre de pages : <span>{livre.npages}</span>
-                                    </p>
-                                    <p>
-                                        Type : <span>Livre</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>)}
+                        {data.map((livre) => <Book livre={livre}/>)}
                     </div>
                 </div>
                 <SideBar dimension={dimension} status={toggleVal} />

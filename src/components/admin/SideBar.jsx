@@ -4,14 +4,15 @@ import { useSelector, useDispatch } from "react-redux";
 import { BiBookHeart } from "react-icons/bi";
 
 import { FaBook, FaBookOpen } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const SideBarData = [
   {
     title: "UserName",
     subCategory: [
-      { icon: <FaBook />, name: "Mes Livres" },
-      { icon: <FaBookOpen />, name: "Mes livres lus" },
-      { icon: <BiBookHeart />, name: "Mes Favoris" },
+      { icon: <FaBook />, name: "Mes Livres", to: "/dashboard" },
+      { icon: <FaBookOpen />, name: "Mes livres lus", to: "" },
+      { icon: <BiBookHeart />, name: "Mes Favoris", to: "" },
     ],
   }
 ];
@@ -54,7 +55,9 @@ const SideBar = ({ dimension, status }) => {
                     className="flex cursor-pointer p-2 mt-2  items-center justify-start text-white text-lg border-[1px] border-slate-400 rounded-lg"
                   >
                     {list.icon}
-                    <p className="ml-2">{list.name}</p>
+                    <Link to={list.to}>
+                      <p className="ml-2">{list.name}</p>
+                    </Link>
                   </div>
                 );
               })}
